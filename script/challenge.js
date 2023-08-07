@@ -54,6 +54,7 @@ const whereAmI = function (coordinates) {
       //   console.log(`You are in ${city}, ${country}`);
       document.querySelector(".map").href = `https://www.google.com/maps/@${lat},${lng},20.71z?entry=ttu`;
       document.querySelector(".card").classList.add("animation");
+      document.querySelector(".card").classList.remove("fadeout");
       return showCountryData(country);
     })
     .catch((err) => {
@@ -71,6 +72,7 @@ searchBtn.addEventListener("click", function (e) {
     return;
   }
   whereAmI(coords);
+  document.querySelector(".card").classList.add("fadeout");
 });
 
 againBtn.addEventListener("click", function (e) {
