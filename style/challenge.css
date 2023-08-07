@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Oxygen", sans-serif;
+  background-image: url("../annie-spratt-AFB6S2kibuk-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  backdrop-filter: blur(2px);
+  min-height: 97vh;
+}
+
+main {
+  margin: 1em;
+  /* height: 100vh; */
+  /* width: 100vw; */
+}
+
+.card {
+  margin: 1em;
+  width: 450px;
+  height: max-content;
+  /* max-height: 95vh; */
+}
+
+.get {
+  transition: all 2s;
+  /* animation: 5s ease-in-out 0.5s 1 normal forwards card-rotate; */
+}
+
+/* @keyframes card-rotate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+} */
+
+.coords {
+  font-weight: 700;
+}
+
+input {
+  background-color: transparent !important;
+  color: lightblue !important;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+.flag {
+  width: 100%;
+}
+
+.search,
+.again {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+small {
+  color: #bbb;
+  text-shadow: 1px 1px 1px #555;
+}
+
+h4 {
+  font-size: 1.3em !important;
+}
+
+@media (max-width: 575px) {
+  .card {
+    width: auto;
+    margin: 0 1.5em;
+  }
+}
