@@ -47,7 +47,7 @@ main {
 
 .fadeout {
   transition: all 4s;
-  transform: translateY(-500px);
+  transform: translateY(-300px);
   opacity: 0;
 }
 .error-page h5,
