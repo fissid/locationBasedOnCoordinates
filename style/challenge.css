@@ -41,9 +41,14 @@ main {
     opacity: 0;
   }
   100% {
-    display: block;
     opacity: 1;
   }
+}
+
+.fadeout {
+  transition: all 4s;
+  transform: translateY(-500px);
+  opacity: 0;
 }
 .error-page h5,
 .error-page small {
